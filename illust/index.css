@@ -1,0 +1,158 @@
+/* 노말라이즈 시작 */
+body, ul, li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+/* 노말라이즈 끝 */
+
+/* 라이브러리 시작 */
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.block {
+  display:block;
+}
+
+.flex {
+  display:flex;
+}
+
+.img-box > img {
+  width:100%;
+  display:block;
+}
+
+.inline-grid {
+  font-size:0;
+}
+
+.inline-grid > * {
+  font-size:1rem;
+  display:inline-block;
+  vertical-align:top;
+}
+
+html {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.border-red {
+  border:10px solid red;
+}
+
+.border-blue {
+  border:10px solid blue;
+}
+
+.border-green {
+  border:10px solid green;
+}
+
+.border-pink {
+  border:10px solid pink;
+}
+
+.border-gold {
+  border:10px solid gold;
+}
+/* 라이브러리 끝 */
+
+/* 커스텀 시작 */
+:root {
+  --site-width:1200px;
+}
+
+bady {
+  height:100vh;
+}
+  
+/* 탑바 시작 */
+.top-bar {
+  width:100%;
+  height:70px;
+  margin:30px 20px;
+  border-bottom:2px solid rgba(0,0,0,0.2);
+}
+
+/* 로고바 시작 */
+.top-bar__logo-bar {
+  width:70px;
+  height:100%;
+  box-sizing:border-box;
+  margin:10px 40px;
+  white-space:nowrap;
+}
+
+.top-bar__logo-bar > .img-box {
+  width:70%;
+  height:50%;
+}
+
+.top-bar__logo-bar > .img-box > img {
+  object-fit:cover;
+  box-sizing:border-box;
+}
+
+/* 메뉴바 시작 */
+.top-bar__manu-bar {
+  width:100%;
+  max-width:var(--site-width);
+  height:100%;
+}
+
+.top-bar__manu-bar > ul {
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.top-bar__manu-bar > ul > li > a {
+  display:block;
+  padding:20px;
+  padding-bottom:0;
+  font-size:1.3rem;
+  margin-right:10px;
+  white-space:nowrap;
+  font-weight:700;
+}
+
+.top-bar__manu-bar > ul > li:hover > a {
+  font-style:italic;
+  text-shadow:1px 3px 5px rgba(80, 75, 240 , 0.8);
+}
+
+/* 일러스트 박스 시작 */
+.illust-list-box {
+  display:flex;
+  width:1000px;
+  flex-wrap:wrap;
+  margin:10px;
+  justify-content:center;
+  align-items:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illust-list-box__container {
+  width:300px;
+  height:300px;
+  background-color:white;
+  margin:5px;
+  padding:5px;
+  border:1px solid pink;
+  box-sizing:border-box;
+  box-shadow:1px 1px 1px rgba(200,0,0,0.2);
+  text-align:center;
+}
+
+.illust-list-box__container:hover {
+  box-shadow:5px 5px 5px rgba(200,0,0,0.5),
+    -5px -5px 2px rgba(200,0,0,0.2);
+}
